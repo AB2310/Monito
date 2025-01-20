@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  background-color: #fceed5; /* Light beige background */
+}
+
+h1, p, button {
+  margin: 0;
+}

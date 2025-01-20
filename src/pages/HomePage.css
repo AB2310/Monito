@@ -1,0 +1,10 @@
+.homepage-container {
+    height: 100vh; /* Full viewport height */
+    background: url("../assets/images/hero-bg.png") no-repeat top left;
+    background-size: cover; /* Ensure the image scales properly */
+    position: relative;
+    overflow: visible; 
+    margin-bottom: 0; /* Ensure no extra space below */
+    padding-bottom: 0;
+  }
+  

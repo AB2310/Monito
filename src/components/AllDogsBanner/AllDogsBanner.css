@@ -1,0 +1,110 @@
+.adbanner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    padding-top: 0;
+    background-color: #ffffff; 
+    overflow: hidden; 
+}
+
+.adbanner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px; 
+    border-radius: 20px;
+    background-color: #FCEED5; 
+}
+
+.adbanner-bg {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+    border-radius: 20px;
+}
+
+.adbanner-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; 
+    padding: 20px 40px;
+    color: #FDFDFD;
+    text-align: right;
+    
+}
+
+.adbanner-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+
+.adbanner-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.adbanner-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #CCD1D2;
+    margin-bottom: 20px;
+    max-width: 48%;
+}
+
+.adbanner-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+}
+
+.adbanner-buttons i{
+    /* display: flex; */
+    /* flex-direction: row; */
+    position: relative;
+    top: 2.5px;
+    gap: 20px;
+}
+
+.adbtn-primary {
+    background-color: #FDFDFD;
+    color: #00171F;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 52, 89, 0.2);
+    transition: all 0.3s ease;
+}
+
+.adbtn-primary:hover {
+    background-color: #b4d3eb;
+}
+
+.adbtn-outline {
+    background-color: transparent;
+    border: 2px solid #FDFDFD;
+    color: #FDFDFD;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 52, 89, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.adbtn-outline:hover {
+    background-color: #00223b;
+}

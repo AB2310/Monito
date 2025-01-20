@@ -1,0 +1,112 @@
+.banner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #ffffff; /* Matches pet section background */
+    overflow: hidden; /* Prevent any vertical scroll */
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px; /* Set a fixed height to avoid overflow */
+    border-radius: 20px;
+    background-color: #f9f9f9; /* Optional for subtle contrast */
+}
+
+.banner-bg {
+    flex: 1;
+    /* background-image: url('../../assets/images/banner-bg.png');  */
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Fill the container height */
+    border-radius: 20px;
+}
+
+.banner-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: flex-end; /* Align text to the left */
+    padding: 20px 40px;
+    color: #003459;
+    text-align: right;
+    /* max-width: 8%; */
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+
+.banner-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #242b33;
+    margin-bottom: 20px;
+    max-width: 48%;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.banner-buttons i{
+    position: relative;
+    top: 2.5px;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: #003459;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 52, 89, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00223b;
+}
+
+.btn-primary a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #003459;
+    color: #003459;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 52, 89, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #b4d3eb;
+}

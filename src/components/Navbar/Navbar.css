@@ -1,0 +1,123 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 120px;
+  background-color: transparent;
+  font-family: "Gilroy", sans-serif;
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #003459;
+}
+
+.navbar-logo img {
+  width: 160px; /* Adjust logo size */
+  height: auto;
+}
+
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #003459;
+}
+
+.navbar-links a {
+  color: #003459;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Search Bar and Button Section */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Search Bar Container */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white; /* Background for search bar */
+  border-radius: 50px; /* Rounded edges */
+  padding: 10px 20px; /* Inner padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 300px; /* Adjust width as needed */
+}
+
+/* Search Icon */
+.search-bar i {
+  color: #667479;
+  position: relative;
+  height: 17px;
+  font-weight: 700;
+}
+
+.search-bar input{
+ color: #99A2A5;
+}
+
+/* Input Field */
+.search-bar input {
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+  background: transparent; /* Transparent background */
+  font-size: 1rem;
+  color: #666; /* Subtle gray color for text */
+  width: 100%; /* Take up remaining space */
+  font-family: "Gilroy", sans-serif;
+}
+
+/* Placeholder Text Style */
+.search-bar input::placeholder {
+  color: #aaa; /* Light gray for placeholder */
+  font-size: 1rem;
+  font-family: "Gilroy", sans-serif;
+}
+
+
+/* Join Button */
+.join-button {
+  background-color: #003459;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #00223b; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .search-bar .search-icon {
+    width: 18px; /* Slightly smaller for mobile */
+    height: 18px;
+  }
+}

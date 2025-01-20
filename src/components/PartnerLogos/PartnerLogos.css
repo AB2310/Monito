@@ -1,0 +1,81 @@
+.partner-logos-section {
+    padding: 40px 110px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for the logo section */
+  }
+/* 
+  .partner{
+    justify-content: space-between;
+  }
+   */
+  .partner-text {
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px; /* Adjust as needed */
+    font-weight: 400; /* Normal weight for "Proud to be part of" */
+    color: #000; /* Black color for normal text */
+    text-align: left;
+  }
+  
+  .partner-text .highlight {
+    font-weight: 700; /* Bold weight for "Pet Sellers" */
+    color: #003459; /* Dark blue for emphasis */
+    font-size: 24px; /* Larger font size for emphasis */
+  }
+  
+  
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .logo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    background: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+  }
+  
+  /* .logo-card:hover {
+    transform: scale(1.05);
+  }
+   */
+  .logo-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px; /* Restrict logo height */
+    object-fit: contain; 
+  }
+  
+
+  .view-seller-btn {
+    background-color: transparent;
+    border: 2px solid #003459;
+    color: #003459;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .view-seller-btn:hover {
+    background-color: #b4d3eb;
+    color: #003459;
+  }
+   
+  .view-seller-btn i{
+    position: relative;
+    top: 2.5px;
+    gap: 20px;
+    color: #003459;
+  }

@@ -1,0 +1,105 @@
+.knowledge-section {
+    padding: 40px 120px;
+    background-color: white; /* White background */
+  }
+  
+  .knowledge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .header-column h2 {
+    font-family: "Gilroy", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #003459;
+    line-height: 36px;
+    margin: 0;
+  }
+  
+  .header-column h4 {
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+  }
+  
+  .view-more-btn {
+    background-color: transparent;
+    border: 2px solid #003459;
+    color: #003459;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .view-more-btn i{
+    position: relative;
+    top: 2.5px;
+    gap: 20px;
+    color: #003459;
+  }
+  
+  
+  .view-more-btn:hover {
+    background-color: #b4d3eb;
+    color: #003459;
+  }
+  
+  .knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .knowledge-card {
+    background: #f9f9f9;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .knowledge-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .knowledge-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .knowledge-tag {
+    display: inline-block;
+    background-color: #00A7E7;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .knowledge-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #003459;
+    margin: 10px 0;
+  }
+  
+  .knowledge-description {
+    font-size: 15px;
+    color: #242B33;
+    line-height: 20px;
+    text-align: justify;
+  }
+  
