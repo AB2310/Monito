@@ -77,12 +77,12 @@
 }
 
 .no-dogs-found {
-  padding-left: 300px;
+  padding-left: 230px;
 }
 
 .no-dogs-found h3{
   color: #003459;
   font-weight: 400;
   white-space: nowrap;
-  padding-left: 70px;
+  padding-left: 80px;
 }
