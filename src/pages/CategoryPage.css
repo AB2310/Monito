@@ -7,12 +7,14 @@
 
 .category-header{
   background-color: white;
+ 
 }
 
 .category-header-content {
   /* max-width: 1180px; */
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 30px;
 }
 
 .filter-section {
@@ -24,6 +26,10 @@
 .category-section {
   flex: 3;
   padding-top: 0;
+}
+
+.breadcrumb-section{
+  margin-left: 110px;
 }
 
 .category-section-header {

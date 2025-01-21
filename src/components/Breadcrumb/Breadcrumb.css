@@ -1,12 +1,14 @@
 .breadcrumb {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-family: 'Gilroy', sans-serif;
     color: #667479;
     margin-bottom: 15px;
-    margin-top: 30px;
-    padding-left: 110px;
+    /* margin-top: 30px; */
+    /* justify-content: center; */
+    /* margin-left: 110px; */
+    /* padding-left: 110px; */
     gap: 6px;
     /* font-weight: 500; */
   }
