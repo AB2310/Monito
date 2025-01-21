@@ -1,0 +1,153 @@
+.dog-details-container {
+    padding: 40px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .breadcrumb-section {
+    margin-bottom: 20px;
+  }
+  
+  .dog-details-main {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .dog-main-image {
+    flex: 1;
+  }
+  
+  .dog-main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dog-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .dog-thumbnails img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .dog-thumbnails img:hover {
+    border-color: #003459;
+    transform: scale(1.1);
+  }
+  
+  .dog-info {
+    flex: 2;
+  }
+  
+  .dog-info h1 {
+    font-size: 2rem;
+    color: #003459;
+    margin-bottom: 10px;
+  }
+  
+  .dog-info h2 {
+    font-size: 1.5rem;
+    color: #e63946;
+    margin-bottom: 20px;
+  }
+  
+  .dog-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .primary-btn {
+    background-color: #003459;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn:hover {
+    background-color: #00223b;
+  }
+  
+  .outline-btn {
+    background-color: transparent;
+    border: 2px solid #003459;
+    color: #003459;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .outline-btn:hover {
+    background-color: #003459;
+    color: #fff;
+  }
+  
+  .details-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .details-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .details-list li span {
+    font-weight: bold;
+    color: #003459;
+  }
+  
+  .guarantee-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .guarantee-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffefcc;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #c77d00;
+  }
+  
+  .share-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .share-section i {
+    font-size: 1.5rem;
+    color: #003459;
+    cursor: pointer;
+  }
+  
+  .share-section i:hover {
+    color: #e63946;
+  }
+  

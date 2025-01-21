@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./CategoryPage.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -17,8 +18,8 @@ import { SiDatadog } from "react-icons/si";
 
 const CategoryPage = () => {
   const breadcrumbPaths = [
-    { label: "Home", link: "http://localhost:3000/" },
-    { label: "Dog", link: "/category/" },
+    { label: "Home", link: "/" },
+    { label: "Dog", link: "/category" },
   ];
 
     const productsData = [
@@ -176,22 +177,23 @@ const CategoryPage = () => {
           <div className="filter-section">
             <FilterSidebar onFiltersChange={handleFiltersChange} />
           </div>
-          <div className="product-section">
-            <div className="product-section-header">
+          <div className="category-section">
+            <div className="category-section-header">
               <h1>Dogs</h1>
               <h4>{filteredProducts.length} puppies</h4>
             </div>
-            <div className="product-grid">
+            <div className="category-grid">
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product) => (
-                  <div key={product.id} className="product-card">
+                  <div key={product.id} className="category-card">
+                    <Link style={{ textDecoration: "none"}} to={`/dog/${product.id}`}>
                     <img src={product.image} alt={product.name} />
                     <h3>{product.name}</h3>
                     <p>
-                      Gender: <b>{product.gender}</b> &nbsp; • &nbsp; Age:{" "}
-                      <b>{product.age}</b>
+                      Gender: <b>{product.gender}</b> &nbsp; • &nbsp; Age: <b>{product.age}</b>
                     </p>
                     <h3>{product.price}</h3>
+                    </Link>
                   </div>
                 ))
               ) : (
