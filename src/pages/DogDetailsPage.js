@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "./DogDetailsPage.css";
 import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
 import pet2 from "./../assets/images/pet2.png";
+import pet3 from "./../assets/images/pet3.png";
 import pet2_1 from "./../assets/images/pet2_1.png";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -11,6 +12,7 @@ import badge2 from "./../assets/images/badge2.png";
 import { BsChatLeftDots } from "react-icons/bs";
 import { PiShareNetworkBold } from "react-icons/pi";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { SiDatadog } from "react-icons/si";
 
 const DogDetailsPage = () => {
   const { id } = useParams(); // Get the ID from the route
@@ -53,7 +55,7 @@ const DogDetailsPage = () => {
       name: "MO102 - Poodle Tiny Sepia",
       sku: "#1002",
       price: "4.000.000 VND",
-      mainImage: "https://via.placeholder.com/600x400",
+      mainImage: pet3,
       images: [
         "https://via.placeholder.com/80",
         "https://via.placeholder.com/80",
@@ -69,14 +71,14 @@ const DogDetailsPage = () => {
       microchip: true,
       location: "Vietnam",
       publishedDate: "10-Oct-2022",
-      additionalInfo: "Pure breed Poodle Tiny Sepia.",
+      additionalInfo: ["Small family friendly dog.", "Good with children", "Playful and energetic."],
       guarantees: [
         {
-          icon: "https://via.placeholder.com/20",
+          icon: badge1,
           text: "100% health guarantee for pets",
         },
         {
-          icon: "https://via.placeholder.com/20",
+          icon: badge2,
           text: "100% guarantee of pet identification",
         },
       ],
@@ -88,7 +90,7 @@ const DogDetailsPage = () => {
   const dog = dogData.find((dog) => dog.id === parseInt(id));
 
   if (!dog) {
-    return <h1>Dog Not Found</h1>; // Handle invalid ID
+    return <div className="nodog"><SiDatadog size={500} />;</div>
   }
 
   const breadcrumbPaths = [

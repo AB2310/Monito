@@ -285,3 +285,11 @@
   position: relative;
    top: 2.9px;
 }
+
+
+.nodog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
