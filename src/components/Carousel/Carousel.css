@@ -1,0 +1,104 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  .carousel-arrow {
+    font-size: 5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    
+  }
+  
+  .carousel-arrow-left {
+    /* position: absolute; */
+    left: 10px;
+    color: #003459;
+  }
+  
+  .carousel-arrow-right {
+    /* position: absolute; */
+    right: 10px;
+    color: #003459;
+  }
+  
+  .carousel-arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .carousel-items {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    max-width: 90%;
+  }
+  
+  .carousel-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 10px;
+  }
+
+  .carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .carousel-card h3 {
+    font-family: "Gilroy", sans-serif;
+    font-size: 1rem;
+    color: #00171F;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .carousel-card p {
+    font-family: "Gilroy", sans-serif;
+    font-size: 0.9rem;
+    color: #667479;
+    margin: 5px 0;
+    text-align: left;
+  }
+
+  .carousel-heading h4{
+    font-family: "Gilroy", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
+    margin-left: 150px;
+    padding-bottom: 10px;
+  }
+
+  .carousel-heading h2{
+    font-family: "Gilroy", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003459;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-left: 150px;
+    padding-bottom: 20px;
+  }
+  

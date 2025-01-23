@@ -41,7 +41,7 @@ const CategoryPage = () => {
     },
     {
       id: 3,
-      name: "M0512 - Alaskan Malamute Grey",
+      name: "MO512 - Alaskan Malamute Grey",
       image: pet4,
       gender: "Male",
       age: "02 months",
@@ -162,7 +162,7 @@ const CategoryPage = () => {
               {filteredProducts.length > 0 ? (
                 filteredProducts.map((product) => (
                   <div key={product.id} className="category-card">
-                    <Link style={{ textDecoration: "none"}} to={`/dog/${product.id}`}>
+                    <Link style={{ textDecoration: "none"}} to={`/dog/${product.name}`} reloadDocument={true}>
                     <img src={product.image} alt={product.name} />
                     <h3>{product.name}</h3>
                     <p>

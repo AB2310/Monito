@@ -2,8 +2,16 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import "./DogDetailsPage.css";
 import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
+// import PetCardsSection2 from "../components/PetCardsSection2/PetCardsSection2";
+import Carousel from "../components/Carousel/Carousel";
+import pet1 from "./../assets/images/pet1.png";
 import pet2 from "./../assets/images/pet2.png";
 import pet3 from "./../assets/images/pet3.png";
+import pet4 from "./../assets/images/pet4.png";
+import pet5 from "./../assets/images/pet5.png";
+import pet6 from "./../assets/images/pet6.png";
+import pet7 from "./../assets/images/pet7.png";
+import pet8 from "./../assets/images/pet8.png";
 import pet2_1 from "./../assets/images/pet2_1.png";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -15,7 +23,105 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiDatadog } from "react-icons/si";
 
 const DogDetailsPage = () => {
-  const { id } = useParams(); // Get the ID from the route
+  const { name } = useParams(); // Get the name from the route
+  const dogs = [
+    {
+          id: 1,
+          image: pet2,
+          name: "MO502 - Poodle Tiny Yellow",
+          gender: "Female",
+          age: "02 months",
+          price: "3.900.000 VND",
+        },
+        {
+          id: 2,
+          image: pet3,
+          name: "MO102 - Poodle Tiny Sepia",
+          gender: "Male",
+          age: "02 months",
+          price: "4.000.000 VND",
+        },
+        {
+          id: 3,
+          name: "MO512 - Alaskan Malamute Grey",
+          image: pet4,
+          gender: "Male",
+          age: "02 months",
+          price: "8.900.000 VND",
+        },
+        {
+          id: 4,
+          image: pet6,
+          name: "MO502 - Pembroke Corgi Tricolor",
+          gender: "Female",
+          age: "02 months",
+          price: "9.000.000 VND",
+        },
+        {
+          id: 5,
+          image: pet5,
+          name: "MO231 - Pembroke Corgi Cream",
+          gender: "Male",
+          age: "02 months",
+          price: "7.900.000 VND",
+        },
+        {
+          id: 6,
+          name: "M0231 - Pomeranian White",
+          image: pet7,
+          gender: "Male",
+          age: "02 months",
+          price: "6.000.000 VND",
+        },
+        {
+          id: 7,
+          image: pet8,
+          name: "MO512 - Poodle Tiny Dairy Cow",
+          gender: "Female",
+          age: "02 months",
+          price: "5.000.000 VND",
+        },
+        {
+          id: 8,
+          image: pet4,
+          name: "M0512 - Alaskan Malamute Grey",
+          gender: "Male",
+          age: "04 months",
+          price: "9.000.000 VND",
+        },
+        {
+          id: 10,
+          image: pet2,
+          name: "MO502 - Poodle Tiny Yellow",
+          gender: "Female",
+          age: "04 months",
+          price: "3.900.000 VND",
+        },
+        {
+          id: 11,
+          image: pet3,
+          name: "MO102 - Poodle Tiny Sepia",
+          gender: "Male",
+          age: "02 months",
+          price: "4.000.000 VND",
+        },
+        {
+          id: 13,
+          image: pet6,
+          name: "MO231 - Pembroke Corgi Tricolor",
+          gender: "Female",
+          age: "02 months",
+          price: "8.900.000 VND",
+        },
+        {
+          id: 14,
+          image: pet1,
+          name: "MO231 - Pomeranian White",
+          gender: "Male",
+          age: "02 months",
+          price: "4.000.000 VND",
+        },
+  ];
   const dogData = [
     {
       id: 1,
@@ -83,11 +189,85 @@ const DogDetailsPage = () => {
         },
       ],
     },
+    {
+      id: 3,
+      name: "MO512 - Alaskan Malamute Grey",
+      sku: "#1003",
+      price: "8.900.000 VND",
+      mainImage: pet4,
+      images: [
+        "https://via.placeholder.com/80",
+        "https://via.placeholder.com/80",
+        "https://via.placeholder.com/80",
+      ],
+      gender: "Male",
+      age: "04 months",
+      size: "Medium",
+      color: "Grey",
+      vaccinated: true,
+      dewormed: true,
+      cert: "Yes (MKA)",
+      microchip: true,
+      location: "Hanoi, Vietnam",
+      publishedDate: "15-Oct-2022",
+      additionalInfo: [
+        "Loyal and protective.",
+        "Great family companion.",
+        "Highly intelligent and trainable.",
+      ],
+      guarantees: [
+        {
+          icon: badge1,
+          text: "100% health guarantee for pets",
+        },
+        {
+          icon: badge2,
+          text: "100% guarantee of pet identification",
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "MO231 - Pomeranian White",
+      sku: "#1004",
+      price: "6.900.000 VND",
+      mainImage: pet1,
+      images: [
+        "https://via.placeholder.com/80",
+        "https://via.placeholder.com/80",
+        "https://via.placeholder.com/80",
+      ],
+      gender: "Male",
+      age: "02 months",
+      size: "Medium",
+      color: "White",
+      vaccinated: true,
+      dewormed: true,
+      cert: "Yes (MKA)",
+      microchip: true,
+      location: "Hanoi, Vietnam",
+      publishedDate: "15-Nov-2023",
+      additionalInfo: [
+        "Loyal and protective.",
+        "Great family companion.",
+        "Highly intelligent and trainable.",
+      ],
+      guarantees: [
+        {
+          icon: badge1,
+          text: "100% health guarantee for pets",
+        },
+        {
+          icon: badge2,
+          text: "100% guarantee of pet identification",
+        },
+      ],
+    },
     // Add more dogs here
   ];
 
   // Find the dog details based on the ID
-  const dog = dogData.find((dog) => dog.id === parseInt(id));
+  const dog = dogData.find((dog) => dog.name.toLowerCase() === decodeURIComponent(name.toLowerCase()));
 
   if (!dog) {
     return <div className="nodog"><SiDatadog size={500} />;</div>
@@ -187,6 +367,12 @@ const DogDetailsPage = () => {
               
             </div>
           </div>
+        </div>
+        {/* <PetCardsSection2 /> */}
+        <div className="carousel-heading">
+          <h4>Whats new?</h4>
+          <h2>See More Puppies</h2>
+          <Carousel items={dogs} />
         </div>
         <Footer />
      </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./PetCardsSection.css";
+import { Link } from "react-router-dom";
 import pet1 from "../../assets/images/pet1.png";
 import pet2 from "../../assets/images/pet2.png";
 import pet3 from "../../assets/images/pet3.png";
@@ -13,64 +14,64 @@ import { IoIosArrowForward } from "react-icons/io";
 const PetCardsSection = () => {
   const pets = [
     {
-      id: "M0231",
-      name: "Pomeranian White",
+      id: 1,
+      name: "MO231 - Pomeranian White",
       image: pet1, // Replace with actual image paths
       gene: "Male",
       age: "02 months",
       price: "6.900.000 VND",
     },
     {
-      id: "M0502",
-      name: "Poodle Tiny Yellow",
+      id: 2,
+      name: "MO502 - Poodle Tiny Yellow",
       image: pet2,
       gene: "Female",
       age: "02 months",
       price: "3.900.000 VND",
     },
     {
-      id: "M0102",
-      name: "Poodle Tiny Sepia",
+      id: 3,
+      name: "MO102 - Poodle Tiny Sepia",
       image: pet3,
       gene: "Male",
       age: "02 months",
       price: "4.000.000 VND",
     },
     {
-      id: "M0512",
-      name: "Alaskan Malamute Grey",
+      id: 4,
+      name: "MO512 - Alaskan Malamute Grey",
       image: pet4,
       gene: "Male",
       age: "02 months",
       price: "8.900.000 VND",
     },
     {
-        id: "M0232",
-        name: "Pembroke Corgi Cream",
+        id: 5,
+        name: "MO232 - Pembroke Corgi Cream",
         image: pet5,
         gene: "Male",
         age: "02 months",
         price: "7.900.000 VND",
       },
       {
-        id: "M0503",
-        name: "Pembroke Corgi Tricolor",
+        id: 6,
+        name: "MO503 - Pembroke Corgi Tricolor",
         image: pet6,
         gene: "Female",
         age: "02 months",
         price: "9.000.000 VND",
       },
       {
-        id: "M0233",
-        name: "Pomeranian White",
+        id: 7,
+        name: "MO233 - Pomeranian White",
         image: pet7,
         gene: "Female",
         age: "02 months",
         price: "6.500.000 VND",
       },
       {
-        id: "M0513",
-        name: "Poodle Tiny Dairy Cow",
+        id: 8,
+        name: "MO513 - Poodle Tiny Dairy Cow",
         image: pet8,
         gene: "Male",
         age: "02 months",
@@ -91,12 +92,14 @@ const PetCardsSection = () => {
       <div className="pets-grid">
         {pets.map((pet) => (
           <div className="pet-card" key={pet.id}>
+            <Link style={{ textDecoration: "none"}} to={`/dog/${pet.name}`} reloadDocument={true}>
             <img src={pet.image} alt={pet.name} className="pet-image" />
             <div className="pet-details">
-              <h3>{pet.id} - {pet.name}</h3>
+              <h3>{pet.name}</h3>
               <p>Gene: <b>{pet.gene}</b> &nbsp; • &nbsp; Age: <b>{pet.age}</b></p>
-              <h3 className="pet-price">{pet.price}</h3>
+              <h3 className="pet-price">{pet.price}</h3>  
             </div>
+            </Link>
           </div>
         ))}
       </div>

@@ -14,7 +14,11 @@
   .dog-details-main {
     display: flex;
     /* gap: 20px; */
-    /* padding: 20px; */
+    padding: 20px;
+    border: 1px solid #EBEEEF;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
   
   .dog-main-image {
@@ -293,3 +297,5 @@
     justify-content: center;
     height: 100vh;
 }
+
+
