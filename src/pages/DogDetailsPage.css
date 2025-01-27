@@ -237,7 +237,7 @@
   .guarantee-badge {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     font-size: 14px;
     background-color: #FCEED5;
     padding: 10px 15px;

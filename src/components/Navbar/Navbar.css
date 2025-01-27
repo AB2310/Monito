@@ -112,12 +112,38 @@
 }
 
 @media (max-width: 768px) {
-  .search-bar {
-    width: 100%; /* Full width on smaller screens */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
 
-  .search-bar .search-icon {
-    width: 18px; /* Slightly smaller for mobile */
-    height: 18px;
+  .navbar-logo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .navbar-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .join-button {
+    width: 100%;
+    text-align: center;
   }
 }

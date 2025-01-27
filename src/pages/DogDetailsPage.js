@@ -84,7 +84,7 @@ const DogDetailsPage = () => {
         {
           id: 8,
           image: pet4,
-          name: "M0512 - Alaskan Malamute Grey",
+          name: "MO512 - Alaskan Malamute Grey",
           gender: "Male",
           age: "04 months",
           price: "9.000.000 VND",
