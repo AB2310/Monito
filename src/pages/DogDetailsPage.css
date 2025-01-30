@@ -299,3 +299,119 @@
 }
 
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .dog-details-main {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .dog-main-image {
+      padding-right: 0;
+      align-items: center;
+  }
+
+  .dog-thumbnails {
+      justify-content: center;
+  }
+
+  .dog-info {
+      text-align: center;
+  }
+
+  .dog-buttons {
+      justify-content: center;
+  }
+
+  .details-list {
+      align-items: center;
+  }
+
+  .guarantee-section {
+      justify-content: center;
+  }
+
+  .share-section {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .dog-details-container {
+      padding: 20px;
+  }
+
+  .dog-info h1 {
+      font-size: 22px;
+  }
+
+  .dog-info h2 {
+      font-size: 18px;
+  }
+
+  .dprimary-btn, .doutline-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  .dog-thumbnails img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .details-list {
+      font-size: 13px;
+  }
+
+  .guarantee-badge {
+      font-size: 12px;
+  }
+
+  .share-section i {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dog-details-container {
+      padding: 15px;
+  }
+
+  .dog-breadcrumb-section{
+    display: none;
+  }
+
+  .dog-details-main {
+      padding: 15px;
+  }
+
+  .dog-info h1 {
+      font-size: 20px;
+  }
+
+  .dog-info h2 {
+      font-size: 16px;
+  }
+
+  .dprimary-btn, .doutline-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .dog-thumbnails img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .details-list {
+      font-size: 12px;
+  }
+
+  .guarantee-badge {
+      font-size: 10px;
+  }
+
+  .share-section i {
+      font-size: 16px;
+  }
+}

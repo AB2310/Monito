@@ -102,3 +102,58 @@
     padding-bottom: 20px;
   }
   
+  /* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .carousel-heading h2, .carousel-heading h4 {
+      margin-left: 50px;
+      text-align: left;
+  }
+
+  .carousel-arrow {
+      font-size: 2.5rem;
+  }
+
+  .carousel-card {
+      min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-heading h2, .carousel-heading h4 {
+      margin-left: 20px;
+      text-align: left;
+  }
+
+  .carousel-arrow {
+      font-size: 5rem;
+      padding: 5px;
+  }
+
+  .carousel-items {
+      max-width: 100%;
+  }
+
+  .carousel-card {
+      min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-heading h2 {
+      font-size: 1.5rem;
+      line-height: 28px;
+  }
+
+  .carousel-heading h4 {
+      font-size: 14px;
+  }
+
+  .carousel-arrow {
+      font-size: 3rem;
+  }
+
+  .carousel-card {
+      min-width: 180px;
+      padding: 8px;
+  }
+}

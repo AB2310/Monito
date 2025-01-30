@@ -108,3 +108,79 @@
 .adbtn-outline:hover {
     background-color: #00223b;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .adbanner-container {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .adbanner-content {
+        align-items: center;
+        text-align: right;
+        max-width: 100%;
+    }
+
+    .adbanner-content p {
+        max-width: 100%;
+    }
+
+    .adbanner-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .adbanner-container {
+        padding: 20px;
+    }
+
+    .adbanner-content h2 {
+        font-size: 2rem;
+    }
+
+    .adbanner-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .adbanner-content p {
+        font-size: 0.9rem;
+    }
+
+    .adbtn-primary, .adbtn-outline {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .adbanner-container {
+        padding: 15px;
+    }
+
+    .adbanner-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .adbanner-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .adbanner-content p {
+        font-size: 0.85rem;
+    }
+
+    .adbtn-primary, .adbtn-outline {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+
+    .adbanner-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}
