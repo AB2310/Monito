@@ -3,7 +3,7 @@
   /* justify-content: center; */
   align-items: center;
   /* padding: 50px; */
-  height: calc(100vh - 114px); /* Full height minus navbar */
+  height: calc(100vh - 95px); /* Full height minus navbar */
   position: relative;
   overflow: hidden;
 }
@@ -56,7 +56,7 @@
     color: #003459;
 }
 
-.btn-primary {
+.hbtn-primary {
   background-color: #003459; /* Navy blue */
   color: white;
   padding: 15px 30px; /* Larger padding for the button */
@@ -71,19 +71,20 @@
   justify-content: center;
   box-shadow: 0 8px 15px rgba(0, 52, 89, 0.2); /* Button shadow */
   transition: all 0.3s ease;
+ 
 }
 
-.btn-primary:hover {
+.hbtn-primary:hover {
   background-color: #00223b; /* Slightly darker on hover */
 }
 
-.btn-primary a {
+.hbtn-primary a {
   color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
-.btn-outline {
+.hbtn-outline {
   background-color: transparent;
   border: 2px solid #003459; /* Navy blue border */
   color: #003459;
@@ -100,7 +101,7 @@
   transition: all 0.3s ease;
 }
 
-.btn-outline:hover {
+.hbtn-outline:hover {
   background-color: #b4d3eb;
   color: #003459;
 }
@@ -109,7 +110,7 @@
   position: absolute;
   right: -80px;
   bottom: -3px;
-  max-width: 50%; /* Keep the base width */
+  max-width: 50%; 
   height: auto;
   transform: scale(1.3); /* Increase size by 20% */
   transform-origin: bottom right; /* Scale relative to the bottom-right corner */
@@ -128,6 +129,7 @@
     flex-direction: column; /* Stack text and image vertically */
     text-align: center;
     height: auto; /* Allow dynamic height */
+    overflow: hidden;
   }
 
   .hero-text {
@@ -145,8 +147,24 @@
 }
 
 @media (max-width: 768px) {
+
+
+  .hero-text {
+   
+    padding: 25px; /* Remove padding on the left */
+    text-align: center; /* Center text */
+    padding-top: 0%;
+    text-align: left;
+  }
+
   .hero-text h1 {
-    font-size: 2.5rem; /* Smaller heading for mobile screens */
+    font-size: 46px; /* Smaller heading for mobile screens */
+    margin-top: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px; /* Smaller heading for mobile screens */
+    /* margin-top: 30px; */
   }
 
   .hero-text p {
@@ -161,5 +179,12 @@
   .hero-image {
     max-width: 90%; /* Further shrink the image */
     margin-top: 20px;
+    bottom: -5px;
+  }
+
+  .hero-image img{
+    max-width: 90%; /* Further shrink the image */
+    margin-top: 20px;
+    padding-left: 80px;
   }
 }

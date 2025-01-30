@@ -103,3 +103,11 @@
     text-align: justify;
   }
   
+  @media (max-width: 768px) {
+
+    .knowledge-section {
+      padding: 20px;
+      background-color: white; /* White background */
+    }
+
+  }

@@ -23,23 +23,28 @@ const Footer = () => {
           </button>
         </form>
       </div>
+
       <div className="footer-links">
         <ul className="footer-nav">
           <a href="/">Home</a>
-          <a href="/category">Category </a>
-          <li>About</li>
-          <li>Contact</li>
+          <a href="/category">Category</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </ul>
+
         <div className="footer-social">
-          <a href="#" ><FaFacebook /></a>
+          <a href="#"><FaFacebook /></a>
           <a href="#"><FaTwitter /></a>
           <a href="#"><FaInstagram /></a>
           <a href="#"><FaYoutube /></a>
         </div>
       </div>
+
       <div className="footer-bottom">
         <p>© 2022 Monito. All rights reserved.</p>
-        <div className="footer-logo"><img src={logo} alt="Monito Logo" /></div>
+        <div className="footer-logo">
+          <img src={logo} alt="Monito Logo" />
+        </div>
         <div className="footer-legal">
           <a href="#">Terms of Service</a>
           <a href="#">Privacy Policy</a>

@@ -115,3 +115,11 @@
     gap: 20px;
   }
   
+
+  @media (max-width: 768px) {
+
+    .adoption-banner-section {
+      display: none;
+    }
+
+  }

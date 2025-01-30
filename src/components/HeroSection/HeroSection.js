@@ -17,8 +17,8 @@ const HeroSection = () => {
             that can meet your needs!
           </p>
           <div className="hero-buttons">
-            <button className="btn-outline">View Intro &nbsp;<i><FaRegCirclePlay /></i></button>
-            <button className="btn-primary"><a href="/category">Explore Now</a></button>
+            <button className="hbtn-outline">View Intro &nbsp;<i><FaRegCirclePlay /></i></button>
+            <button className="hbtn-primary"><a href="/category">Explore Now</a></button>
           </div>
         </div>
 

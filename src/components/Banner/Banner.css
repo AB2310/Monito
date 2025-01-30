@@ -110,3 +110,12 @@
 .btn-outline:hover {
     background-color: #b4d3eb;
 }
+
+
+@media (max-width: 768px) {
+
+    .banner-section {
+      display: none;
+    }
+
+  }

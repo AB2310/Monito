@@ -79,3 +79,12 @@
     gap: 20px;
     color: #003459;
   }
+
+
+  @media (max-width: 768px) {
+
+    .partner-logos-section {
+      display: none;
+    }
+
+  }
